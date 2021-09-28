@@ -4,11 +4,7 @@ class Form extends React.Component {
   state = { gender: "", height: 0, weight: 0 };
   onFormSubmit = (event) => {
     event.preventDefault();
-    this.props.onSubmit(
-      this.state.gender,
-      this.state.height,
-      this.state.weight
-    );
+    this.props.onSumit(this.state.gender, this.state.height, this.state.weight);
   };
 
   render() {
