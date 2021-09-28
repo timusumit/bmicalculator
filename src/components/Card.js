@@ -8,7 +8,7 @@ class Card extends React.Component {
     console.log(gender);
     const hcm = height * 30.48;
     const hm = hcm / 100;
-    const bmi = weight / (hm ^ 2);
+    const bmi = (weight / (hm ^ 2)).toFixed(2);
     this.setState({ bmifinal: bmi });
   };
 
